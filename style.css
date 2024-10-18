@@ -1,0 +1,750 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+
+body{
+   margin: 0;
+}
+
+.headtext{
+   font-size: 60px;
+   font-weight: 600;
+   font-family: "Ubuntu";
+   line-height: 23px;
+   text-align: center;
+   animation: slideIn 1s linear;
+   animation-timeline: auto;
+}
+
+.headtext-2{
+   font-size: 36px;
+   font-weight: 600;
+   font-family: "Ubuntu";
+   line-height: 20px;
+   text-align: left;
+   animation: slideIn 1s linear;
+   animation-timeline: auto;
+}
+
+.headtext-3{
+   font-size: 30px;
+   font-weight: 600;
+   font-family: "Ubuntu";
+   line-height: 48px;
+   text-align: left;
+   animation: slideIn 1s linear;
+   animation-timeline: auto;
+}
+
+.paragraph{
+   font-size: 18px;
+   font-weight: 400;
+   font-family: "Ubuntu";
+   line-height: 24px;
+   text-align: left;
+   margin: 15px;
+   animation: slideIn 1s linear;
+   animation-timeline: auto;
+}
+
+.bg-margin{
+   margin: 40px 20px;
+}
+
+.sm-margin{
+   margin: 20px;
+}
+
+.no-margin-left{
+   margin-left: 0;
+}
+
+.align-left{
+   text-align: left;
+}
+
+.lists{
+   margin: 0;
+}
+
+.lists li{
+   margin: 30px 0;
+   text-align: left;
+   font-size: 18px;
+   line-height: 24px;
+   font-family: "Ubuntu";
+   font-weight: 400;   
+   animation: slideIn 1s linear;
+}
+
+header{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   width: 100%;
+   height: 100px;
+   background-color: #69a2ff;
+}
+
+header img{
+   width: 100px;
+   height: 100px;
+   margin: 0;
+   left: 0;
+}
+
+header h1{
+   margin: 0 0 0 320px;
+}
+
+
+nav{
+   height: 50px;
+   display: flex;
+   justify-content: flex-between;
+   align-items: center;
+   background-color: #000000;
+}
+
+.navlinks{
+   text-decoration: none;
+   color: #fff;
+   padding: 16px 30px;
+   font-size: 18px;
+   transition: 0.5s ease;
+}
+
+.navlinks:hover{
+   background-color: #fff;
+   color: #000000;
+}
+
+.content{
+   display: flex;
+   flex-direction: column;
+}
+
+.homepage{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   background-color: #ebebeb;
+}
+
+.introduction{
+   display: flex;
+   flex: 1;
+   justify-content: center;
+   align-items: center;
+   background-image: url("https://oceana.org/wp-content/uploads/sites/18/2024/07/7Misconceptions_0724.png");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   color: #fff;
+}
+
+
+.introduction__content{
+   flex-direction: column;
+   padding-left: 100px;
+}
+
+.emptyDiv{
+   background-image: linear-gradient(360deg, rgba(105,162,255,1) 0%, rgba(0,0,0,1) 99%);
+   height: 100px;
+   width: 100%;
+}
+
+.aboutus{
+   display: flex;
+   background-color: #4158D0;
+   background-image: url("https://cdn.shopify.com/s/files/1/0024/1788/5284/files/endangered-whale-shark.jpg?5290");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   opacity: 0.8;
+   color: #fff;
+}
+
+
+.aboutus__content{
+   flex-direction: column;
+   padding-left: 100px
+}
+
+.learn-more{
+   background: linear-gradient(62deg, rgba(214,32,161,1) 0%, rgba(55,44,186,1) 99%);
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+   padding-bottom: 30px;
+   color: #fff;
+}
+
+.learn-more__button{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin: 10px;
+}
+
+.learn-more__button button{
+   border: none;
+   outline: none;
+   background-color: #000;
+   color: #fff;
+   border-radius: 46px;
+   width: 33%;
+   height: 50px;
+   transition: all 0.5s ease;
+   cursor: pointer;
+}
+
+.learn-more__button button:hover{
+   background-color: #fff;
+   color: #000;
+   border: 1px solid #fff;
+}
+
+.learn-more__links{
+   text-decoration: none;
+   color: #fff;
+   padding: 16px 176px;
+   font-size: 18px;
+   transition: 0.5s ease; 
+}
+
+.learn-more__button button:hover .learn-more__links{
+   color: #000;
+}
+
+.faq__container{
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   background-color: #ebebeb;
+}
+
+.faq__1a{
+   display: flex;
+   padding: 10px;
+   margin-bottom: 10px;
+   background-color: #fff;
+   cursor: pointer;
+}
+
+.faq__1b{
+   display: none;
+   padding: 10px;
+   margin-bottom: 10px;
+   background-color: #fff;
+   cursor: pointer;
+}
+
+.faq__1b::active{
+   display: flex;
+}
+
+.question__container{
+   display: flex;
+  justify-content: space-between;
+}
+.question__container h3{
+   width: 100%;
+}
+
+.question__container i{
+   display: flex;
+   font-size: 30px;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer{
+   display: flex;
+   flex: 1;
+   justify-content: space-between;
+   width: 100%;
+   height: 360px;
+   padding: 0 40px;
+   background-color: #000;
+   color: #fff
+}
+
+.footer__social-media__icon{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+}
+
+.footer__social-media i{
+   font-size: 20px;
+   cursor: pointer;
+   margin: 10px;
+}
+
+.footer__logo{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: flex-start;
+   margin-top: 20px;;
+}
+
+.footer__logo img{
+   width: 100px;
+   height: 80px;
+   object-fit: contain;
+   margin-right: 15px;
+}
+
+@media screen and (max-width: 1200px){
+   .headtext{
+      	font-size: 50px;
+      	line-height: 20px;	
+   }
+
+   header h1{
+	margin-left: 150px;
+   }
+   
+   .learn-more__links{
+	padding: 16px 80px;
+        text-align: center;
+   }
+}
+
+
+@media screen and (max-width: 1000px){
+
+   .headtext{
+      	font-size: 40px;
+      	line-height: 20px;	
+   }
+
+   header h1{
+	margin-left: 150px;
+   }
+}
+
+
+@media screen and (max-width: 600px){
+   .headtext{
+      	font-size: 50px;
+      	line-height: 20px;	
+   }
+
+   header h1{
+	margin-left: 150px;
+   }
+
+   .paragraph{
+      font-size: 24px;
+      font-weight: 400;
+      font-family: "Ubuntu";
+      line-height: 36px;
+      text-align: left;
+      margin: 15px;
+   }
+
+   .headtext{
+      font-size: 60px;
+      font-weight: 600;
+      font-family: "Ubuntu";
+      line-height: 23px;
+      text-align: center;
+   }
+
+   .headtext-2{
+      font-size: 40px;
+      font-weight: 600;
+      font-family: "Ubuntu";
+      line-height: 20px;
+      text-align: left;
+   }
+
+   .headtext-3{
+      font-size: 36px;
+      font-weight: 600;
+      font-family: "Ubuntu";
+      line-height: 48px;
+      text-align: left;
+   }
+
+   .lists li{
+      margin: 30px 0;
+      text-align: left;
+      font-size: 24px;
+      line-height: 36px;
+      font-family: "Ubuntu";
+      font-weight: 400;
+   }
+}
+
+
+
+@keyframes slideIn {
+            from { transform: translateY(10px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+
+body{
+   margin: 0;
+}
+
+.headtext{
+   font-size: 60px;
+   font-weight: 600;
+   font-family: "Ubuntu";
+   line-height: 23px;
+   text-align: center;
+   animation: slideIn 1s linear;
+}
+
+.headtext-2{
+   font-size: 36px;
+   font-weight: 600;
+   font-family: "Ubuntu";
+   line-height: 20px;
+   text-align: left;
+   animation: slideIn 1s linear;
+}
+
+.headtext-3{
+   font-size: 30px;
+   font-weight: 600;
+   font-family: "Ubuntu";
+   line-height: 48px;
+   text-align: left;
+   animation: slideIn 1s linear;
+}
+
+.paragraph{
+   font-size: 18px;
+   font-weight: 400;
+   font-family: "Ubuntu";
+   line-height: 24px;
+   text-align: left;
+   margin: 15px;
+   animation: slideIn 1s linear;
+}
+
+.bg-margin{
+   margin: 40px 20px;
+}
+
+.sm-margin{
+   margin: 20px;
+}
+
+.no-margin-left{
+   margin-left: 0;
+}
+
+.align-left{
+   text-align: left;
+}
+
+.lists{
+   margin: 0;
+}
+
+.lists li{
+   margin: 30px 0;
+   text-align: left;
+   font-size: 18px;
+   line-height: 24px;
+   font-family: "Ubuntu";
+   font-weight: 400;   
+   animation: slideIn 1s linear;
+}
+
+header{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   width: 100%;
+   height: 100px;
+   background-color: #3dad68;
+}
+
+header img{
+   width: 100px;
+   height: 100px;
+   margin: 0;
+   left: 0;
+}
+
+header h1{
+   margin: 0 0 0 320px;
+}
+
+
+nav{
+   height: 50px;
+   display: flex;
+   justify-content: flex-between;
+   align-items: center;
+   background-color: #000000;
+}
+
+.navlinks{
+   text-decoration: none;
+   color: #fff;
+   padding: 16px 30px;
+   font-size: 18px;
+   transition: 0.5s ease;
+}
+
+.navlinks:hover{
+   background-color: #fff;
+   color: #000000;
+}
+
+.content{
+   display: flex;
+   flex-direction: column;
+}
+
+.homepage{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   background-color: #8EC5FC;
+   background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+
+.introduction{
+   display: flex;
+   flex: 1;
+   justify-content: center;
+   align-items: center;
+}
+
+.introduction img{
+   width: 300px;
+   height: 300px;
+   object-fit: contain;
+   margin-left: 20px;
+}
+
+.introduction__content{
+   flex-direction: column;
+   padding-left: 100px;
+
+}
+
+.aboutus{
+   display: flex;
+   background: rgb(2,0,36);
+   background-color: #4158D0;
+   background-image: linear-gradient(298deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+   color: #fff;
+}
+
+.aboutus img{
+   width: 580px;
+   height: 480px;
+   object-fit: contain;
+   margin: 30px 0 0 20px;
+}
+
+
+.aboutus__content{
+   flex-direction: column;
+   padding-left: 100px
+}
+
+.learn-more{
+   background: linear-gradient(62deg, rgba(214,32,161,1) 0%, rgba(55,44,186,1) 99%);
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+   padding-bottom: 30px;
+   color: #fff;
+}
+
+.learn-more__button{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin: 10px;
+}
+
+.learn-more__button button{
+   border: none;
+   outline: none;
+   background-color: #000;
+   color: #fff;
+   border-radius: 46px;
+   width: 33%;
+   height: 50px;
+   transition: all 0.5s ease;
+   cursor: pointer;
+}
+
+.learn-more__button button:hover{
+   background-color: #fff;
+   color: #000;
+   border: 1px solid #fff;
+}
+
+.learn-more__links{
+   text-decoration: none;
+   color: #fff;
+   padding: 16px 176px;
+   font-size: 18px;
+   transition: 0.5s ease; 
+}
+
+.learn-more__button button:hover .learn-more__links{
+   color: #000;
+}
+
+.footer{
+   display: flex;
+   flex: 1;
+   justify-content: space-between;
+   width: 100%;
+   height: 360px;
+   padding: 0 40px;
+   background-color: #000;
+   color: #fff
+}
+
+.footer__social-media__icon{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+}
+
+.footer__social-media i{
+   font-size: 20px;
+   cursor: pointer;
+   margin: 10px;
+}
+
+.footer__logo{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer__logo img{
+   width: 100px;
+   height: 80px;
+   object-fit: contain;
+   margin-right: 15px;
+}
+
+@media screen and (max-width: 1200px){
+   .headtext{
+      	font-size: 50px;
+      	line-height: 20px;	
+   }
+
+   header h1{
+	margin-left: 150px;
+   }
+   
+   .learn-more__links{
+	padding: 16px 80px;
+        text-align: center;
+   }
+}
+
+
+@media screen and (max-width: 1000px){
+
+   .headtext{
+      	font-size: 40px;
+      	line-height: 20px;	
+   }
+
+   header h1{
+	margin-left: 150px;
+   }
+}
+
+
+@media screen and (max-width: 600px){
+   .headtext{
+      	font-size: 50px;
+      	line-height: 20px;	
+   }
+
+   header h1{
+	margin-left: 150px;
+   }
+
+   .paragraph{
+      font-size: 24px;
+      font-weight: 400;
+      font-family: "Ubuntu";
+      line-height: 36px;
+      text-align: left;
+      margin: 15px;
+   }
+
+   .headtext{
+      font-size: 60px;
+      font-weight: 600;
+      font-family: "Ubuntu";
+      line-height: 23px;
+      text-align: center;
+   }
+
+   .headtext-2{
+      font-size: 40px;
+      font-weight: 600;
+      font-family: "Ubuntu";
+      line-height: 20px;
+      text-align: left;
+   }
+
+   .headtext-3{
+      font-size: 36px;
+      font-weight: 600;
+      font-family: "Ubuntu";
+      line-height: 48px;
+      text-align: left;
+   }
+
+   .lists li{
+      margin: 30px 0;
+      text-align: left;
+      font-size: 24px;
+      line-height: 36px;
+      font-family: "Ubuntu";
+      font-weight: 400;
+   }
+}
+
+
+@keyframes fadeIn {
+   from {opacity : 0; }
+   to   {opacity : 1; }
+}
+
+@keyframes slideIn {
+            from { transform: translateY(25px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+>>>>>>> 3aeac703d7806701ac633be09be41a5d63732aac
